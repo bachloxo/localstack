@@ -69,7 +69,7 @@ awslocal sqs get-queue-attributes --queue-url [queue-url] --attribute-name Queue
 ```
 awslocal lambda create-function --function-name [function_name] --code S3Bucket="__local__",S3Key="[path_to_your_lambda_folder]" --handler [handler_function] --runtime [runtime_version] --role [whatever] --environment Variables={[your_constant_environment]}
 ```
->ex: awslocal lambda create-function --function-name LC_Error_Log_local --code S3Bucket="__local__",S3Key="/Users/macintosh/Projects/log_collector/lambda" --handler error_log.process --runtime nodejs8.10 --role arn:aws:iam::123456:role/role-name --environment Variables={ENVIRONMENT=testing}
+>ex: awslocal lambda create-function --function-name LC_Error_Log_local --code `S3Bucket="__local__"`,S3Key="/Users/macintosh/Projects/log_collector/lambda" --handler error_log.process --runtime nodejs8.10 --role arn:aws:iam::123456:role/role-name --environment Variables={ENVIRONMENT=testing}
 
 - Update trigger event source mapping
 ```
