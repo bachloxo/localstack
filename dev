@@ -1,0 +1,42 @@
+#!/bin/sh
+########################################################
+#***********         MAIN FUNCTION          ***********#
+########################################################
+main() {
+    dev=$0
+    option=$2;
+    case "$1" in
+        build)
+            docker-compose build
+        ;;
+        start)
+            docker-compose build
+            docker-compose up -d
+            docker-compose ps
+        ;;
+        run)
+            docker-compose up -d
+            docker-compose ps
+        ;;
+        status)
+            docker-compose ps
+        ;;
+        open)
+            docker-compose exec $option bash
+        ;;
+        stop)
+            docker-compose stop
+        ;;
+        start)
+            docker-compose start
+        ;;
+        restart)
+            docker-compose restart
+        ;;
+        *)
+            echo $"Usage: $dev {build|start|run|status|open|stop}"
+            exit 1
+    esac
+}
+
+main "$@"

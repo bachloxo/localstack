@@ -1,0 +1,3 @@
+* * * * * laradock /usr/bin/php /var/www/log_collector/artisan schedule:run >> /dev/null 2>&1
+
+#*/2 * * * * laradock /usr/bin/php /var/www/core_api/tools/ci.php Batch_sender_group/send_data_1 /dev/null 2>&1
