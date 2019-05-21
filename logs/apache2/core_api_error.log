@@ -1,1 +1,0 @@
-[Thu May 16 15:22:40.818094 2019] [proxy_fcgi:error] [pid 21:tid 140037517723392] (70007)The timeout specified has expired: [client 172.20.0.1:47766] AH01075: Error dispatching request to : (polling)

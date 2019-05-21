@@ -1,3 +1,0 @@
-172.20.0.1 - - [16/May/2019:09:18:32 +0000] "POST //api/v1/sync/core_ticket HTTP/1.1" 200 384 "-" "PostmanRuntime/7.11.0"
-172.20.0.1 - - [16/May/2019:09:20:51 +0000] "GET / HTTP/1.1" 404 2555 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36"
-172.20.0.1 - - [16/May/2019:09:20:52 +0000] "GET /favicon.ico HTTP/1.1" 404 228 "http://qr-ticket-api.local/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36"
